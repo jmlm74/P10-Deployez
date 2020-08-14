@@ -43,7 +43,7 @@ SECRET_KEY = get_env_variable('SECRET_KEY', '3r6ogr^(f+hh=a=kt2l(jdbivga_6iz&4yo
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -95,8 +95,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'purbeurre.wsgi.application'
-
+#
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -180,6 +179,4 @@ if DEBUG:
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     MIDDLEWARE += ['whitenoise.middleware.WhiteNoiseMiddleware']
-    # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-    # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'

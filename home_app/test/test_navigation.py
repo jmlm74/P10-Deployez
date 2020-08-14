@@ -1,6 +1,6 @@
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.urls import reverse
-from selenium.webdriver import Chrome
+from selenium.webdriver import Firefox
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 import inspect
@@ -11,7 +11,7 @@ class TestNavigation(StaticLiveServerTestCase):
         test Navigation from homepage
     """
     def setUp(self):
-        self.browser = Chrome()
+        self.browser = Firefox()
         self.browser.implicitly_wait(10)
 
     def tearDown(self):

@@ -26,7 +26,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
- WSGI_APPLICATION = 'purbeurre.wsgi.application'
+WSGI_APPLICATION = 'purbeurre.wsgi.application'
 
 # static files
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

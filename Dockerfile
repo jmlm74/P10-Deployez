@@ -9,7 +9,7 @@ COPY . /var/www/purbeurre/
 WORKDIR /var/www/purbeurre
 RUN a2enmod ssl
 RUN pip3 install --upgrade pip &&  pip3 install -r /var/www/purbeurre/requirements.txt
-RUN python3 manage.py collectstatic && python3 manage.py makemigrations && python3 manage.py migrate
+RUN python3 manage.py collectstatic --no-input && python3 manage.py makemigrations && python3 manage.py migrate
 
 EXPOSE 80 443
 CMD ["apache2ctl","-D","FOREGROUND"]

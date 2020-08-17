@@ -21,7 +21,7 @@ DATABASES = {
         'NAME': 'purbeurre',
         'USER': 'jmlm',
         'PASSWORD': 'jmlmpw',
-        'HOST': '192.168.1.99',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }

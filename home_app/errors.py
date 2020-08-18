@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from sentry_sdk import capture_message
 """
 Errors handlers.
 The most generic as possible --> Dict for the errors - simple functions for the different errors
@@ -42,6 +43,8 @@ def error_view_handler(request, exception, status):
                  context : error detail to be displayed
     """
     print(f"Erreur {status} - {exception}")
+    #  line for sentry
+    capture_message("Page not found!", level="error")
     return render(request, template_name='errors/errors.html', status=status,
                   context={'error': str(exception), 'status': status,
                            'title': VIEW_ERRORS[status]['title'],

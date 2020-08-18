@@ -38,3 +38,6 @@ def autocomplete_search(request):
         data = json.dumps(result)
     mimetype = 'application/json'
     return HttpResponse(data, mimetype)
+
+def test_error(request):
+    return 1/0

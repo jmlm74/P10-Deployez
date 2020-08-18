@@ -12,9 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from django.core.exceptions import ImproperlyConfigured
-# Sentry
-import sentry_sdk
-from sentry_sdk.integrations.django import DjangoIntegration
+
 
 
 def get_env_variable(var_name, default_value=None):
@@ -184,11 +182,4 @@ else:
     MIDDLEWARE += ['whitenoise.middleware.WhiteNoiseMiddleware']
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
-sentry_sdk.init(
-    dsn="https://da7ff0a617ee4327afaf9b54fdac9971@o435771.ingest.sentry.io/5395667",
-    integrations=[DjangoIntegration()],
 
-    # If you wish to associate users to errors (assuming you are using
-    # django.contrib.auth) you may enable sending PII data.
-    send_default_pii=True
-)

@@ -30,7 +30,10 @@ def user_view(request):
                     if user.is_active:
                         login(request, user)
                         print(f"Connection of {username}")      # for the logs
-                        logging.info(f"connection of {user}")   # sentry
+                        try:
+                            logging.info(f"connection of {user}")   # sentry
+                        except AttributeError:
+                            pass                        
                         return HttpResponseRedirect(reverse('home_app:index'))  # return to the index
                     else:
                         userform.add_error(None, "Compte désactivé : Connexion refusée")  # incactive

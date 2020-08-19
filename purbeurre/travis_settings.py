@@ -2,7 +2,6 @@ import os
 
 from .settings import *
 
-
 # postgres database
 DATABASES = {
     'default': {

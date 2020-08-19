@@ -14,7 +14,6 @@ import os
 from django.core.exceptions import ImproperlyConfigured
 
 
-
 def get_env_variable(var_name, default_value=None):
     try:
         return os.environ[var_name]
@@ -177,17 +176,6 @@ if DEBUG:
         '127.0.0.1',
         # ...
     ]
-    import sentry_sdk
-    from sentry_sdk.integrations.django import DjangoIntegration
-
-    sentry_sdk.init(
-        dsn="https://da7ff0a617ee4327afaf9b54fdac9971@o435771.ingest.sentry.io/5395667",
-        integrations=[DjangoIntegration()],
-
-        # If you wish to associate users to errors (assuming you are using
-        # django.contrib.auth) you may enable sending PII data.
-        send_default_pii=True
-)
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     MIDDLEWARE += ['whitenoise.middleware.WhiteNoiseMiddleware']

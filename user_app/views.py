@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 from .models import User
 
+from sentry_sdk.integrations import logging
 from user_app import forms
 
 
@@ -28,7 +29,8 @@ def user_view(request):
                 if user:    # authenticated ?
                     if user.is_active:
                         login(request, user)
-                        print(f"Connection of {username}")   # for the logs
+                        print(f"Connection of {username}")      # for the logs
+                        logging.info(f"connection of {user}")   # sentry
                         return HttpResponseRedirect(reverse('home_app:index'))  # return to the index
                     else:
                         userform.add_error(None, "Compte désactivé : Connexion refusée")  # incactive

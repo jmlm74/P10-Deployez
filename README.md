@@ -33,3 +33,16 @@ Créez une tâche Cron qui mettra à jour les éléments récupérés d’Open F
 Dernière étape (optionnelle) ! Achetez un nom de domaine et reliez-le à vos serveurs. 
 
 ## Livrables  
+[Démarche](/Livrables/P10_01_demarche.pdf) - Démarche  
+[Crontab](/Livrables/P10_02_crontab) - Crontab  
+[Monitoring](/Livrables/P10_03_Monitoring) - Monitoring  
+[Monitoring](/Livrables/P10_04_Monitoring) - monitoring  
+[Monitoring - Alertes](/Livrables/P10_05_Monitoring-Alert) - Alertes  
+[Travis-CI](/Livrables/P10_06_Travis-CI) - Travis-CI  
+[Sentry](/Livrables/P10_07_Sentry) - Sentry  
+[Init_db](/Livrables/P10_08_initdb) - Initialisation BdD  
+[Docker-Hub](/Livrables/P10_09_Docker) - Dashboard Docker-Hub  
+[Docker_maj](/Livrables/P10_10_Docker_maj1) - Mise a jour conteneurs docker  
+[Monitor.sh](/Livrables/P10_12_monitor) - Monitoring services (script)  
+[Présentation](/Livrables/presentation.pdf) - Présentation  
+

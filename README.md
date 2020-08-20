@@ -34,15 +34,15 @@ Dernière étape (optionnelle) ! Achetez un nom de domaine et reliez-le à vos s
 
 ## Livrables  
 [Démarche](/Livrables/P10_01_demarche.pdf) - Démarche  
-[Crontab](/Livrables/P10_02_crontab) - Crontab  
-[Monitoring](/Livrables/P10_03_Monitoring) - Monitoring  
-[Monitoring](/Livrables/P10_04_Monitoring) - monitoring  
-[Monitoring - Alertes](/Livrables/P10_05_Monitoring-Alert) - Alertes  
-[Travis-CI](/Livrables/P10_06_Travis-CI) - Travis-CI  
-[Sentry](/Livrables/P10_07_Sentry) - Sentry  
-[Init_db](/Livrables/P10_08_initdb) - Initialisation BdD  
-[Docker-Hub](/Livrables/P10_09_Docker) - Dashboard Docker-Hub  
-[Docker_maj](/Livrables/P10_10_Docker_maj1) - Mise a jour conteneurs docker  
-[Monitor.sh](/Livrables/P10_12_monitor) - Monitoring services (script)  
+[Crontab](/Livrables/P10_02_crontab.png) - Crontab  
+[Monitoring](/Livrables/P10_03_Monitoring.png) - Monitoring  
+[Monitoring](/Livrables/P10_04_Monitoring.png) - monitoring  
+[Monitoring - Alertes](/Livrables/P10_05_Monitoring-Alert.png) - Alertes  
+[Travis-CI](/Livrables/P10_06_Travis-CI.png) - Travis-CI  
+[Sentry](/Livrables/P10_07_Sentry.png) - Sentry  
+[Init_db](/Livrables/P10_08_initdb.png) - Initialisation BdD  
+[Docker-Hub](/Livrables/P10_09_Docker.png) - Dashboard Docker-Hub  
+[Docker_maj](/Livrables/P10_10_Docker_maj1.png) - Mise a jour conteneurs docker  
+[Monitor.sh](/Livrables/P10_12_monitor.png) - Monitoring services (script)  
 [Présentation](/Livrables/presentation.pdf) - Présentation  
 

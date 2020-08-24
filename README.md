@@ -43,6 +43,6 @@ Dernière étape (optionnelle) ! Achetez un nom de domaine et reliez-le à vos s
 [Init_db](/Livrables/P10_08_initdb.png) - Initialisation BdD  
 [Docker-Hub](/Livrables/P10_09_Docker.png) - Dashboard Docker-Hub  
 [Docker_maj](/Livrables/P10_10_Docker_maj1.png) - Mise a jour conteneurs docker  
-[Monitor.sh](/Livrables/P10_12_monitor.png) - Monitoring services (script)  
+[Monitor.sh](/Livrables/P10_12_monitor.sh) - Monitoring services (script)  
 [Présentation](/Livrables/presentation.pdf) - Présentation  
 
